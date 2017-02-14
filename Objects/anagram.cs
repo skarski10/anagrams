@@ -14,6 +14,7 @@ namespace AnagramApp.Objects
     {
       _userInput= input.ToLower();
       _wordArray= input.ToCharArray();
+      _instances.Add(input);
     }
 
     public string GetWord()
@@ -34,10 +35,15 @@ namespace AnagramApp.Objects
     public void RearrangeArray()
     {
       int n = _wordArray.Length;
+      if(n > 20)
+      {
+        n = 20;
+      }
+
       string manipulationString = _userInput;
       char[] array = manipulationString.ToCharArray();
 
-      for(int index = 0; index < 10; index++)
+      for(int index = 0; index < n; index++)
       {
         for(int i=0; i <= n - 2; i++)
         {

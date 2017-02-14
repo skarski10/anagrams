@@ -48,13 +48,8 @@ namespace AnagramTest
         Console.WriteLine(word);
       }
 
-      Assert.Equal("hat", "hat");
+      Assert.Equal("hat", "hat"); //Testing for random, so not using this assert.
 
     }
-
-    // public void Dispose()
-    // {
-    //   Anagram.DeleteAll();
-    // }
   }
 }
