@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Anagrams</h1>
+  <div class="row">
+    <h3>Enter a word below are we will give you 10 possible anagrams</h3>
+    <form class="" action="/" method="post">
+      <label for="user-input">Enter a word</label>
+      <input type="text" name="user-input" id="user-input">
+      <button type="submit" name="button">Submit</button>
+    </form>
+  </div>
+</div>
+
+@if(Model != null)
+{
+<div class="row">
+  @foreach(var input in Model)
+  {
+    <li>@input</li>
+  }
+</div>
+
+}

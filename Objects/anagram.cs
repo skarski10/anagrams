@@ -51,6 +51,9 @@ namespace AnagramApp.Objects
         _instances.Add(new string(array));
       }
     }
-  //   public static DeleteAll
+    public static void ClearList()
+    {
+      _instances.Clear();
+    }
   }
 }
