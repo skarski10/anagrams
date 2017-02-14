@@ -1,9 +1,3 @@
-##Specs
-
-The program will take a user input word and store it
-* **Input:** Hat
-* **Output:** { Hat }
-
 The program will make all letters lower case
 * **Input:** HAT
 * **Output:** { hat }
